@@ -1,4 +1,4 @@
-import sys
+'''import sys
 
 max_name = ''
 max_day = 0
@@ -23,4 +23,13 @@ for _ in range(int(input())):
         max_month = month
         max_day = day
 print(max_name)
-print(min_name)
+print(min_name)'''
+
+# sort함수 활용
+li = []
+for _ in range(int(input())):
+    n, d, m, y = input().split()
+    li.append([n, int(d), int(m), int(y)])
+li.sort(key=lambda x:(x[3],x[2],x[1]))
+print(li[-1][0])
+print(li[0][0])
