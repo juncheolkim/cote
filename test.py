@@ -8,4 +8,9 @@ print(A)
 A[1][1] = 1
 print(A)
 '''
-print([i for i in range(1)])
+# print([i for i in range(1)])
+from collections import deque
+a = deque([1,2,3])
+a.append(1)
+a.popleft()
+print(a)
