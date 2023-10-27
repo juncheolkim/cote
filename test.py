@@ -14,7 +14,10 @@ a = deque([1,2,3])
 a.append(1)
 a.popleft()
 print(a)'''
-lst_plug_stack = [1,2]
+'''lst_plug_stack = [1,2]
 lst_plug_stack = list(map(lambda x : x-1 if x > 0 else 101, lst_plug_stack))
 lst_plug_stack = list(map(lambda x : x-1 if x > 0 else 101, lst_plug_stack))
-print(lst_plug_stack)
+print(lst_plug_stack)'''
+
+# print(sum([[1,2],[2,3]]))
+print([i for i in range(2,1)])
