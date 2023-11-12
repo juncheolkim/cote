@@ -17,6 +17,6 @@ def check_two(n:int):
 
     return res
 
-n_ten = min(check_five(n),check_two(n))
-n_and_m_ten = min(check_five(n-m)+check_five(m),check_two(n-m)+check_two(m))
-print(n_ten - n_and_m_ten)
+
+answer = min(check_five(n) - check_five(n-m) - check_five(m),check_two(n) - check_two(n-m) - check_two(m))
+print(answer)
