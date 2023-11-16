@@ -8,7 +8,6 @@ def check_five(n:int):
 
     return res
 
-
 def check_two(n:int):
     res = 0
     while n:
@@ -16,7 +15,6 @@ def check_two(n:int):
         res += n
 
     return res
-
 
 answer = min(check_five(n) - check_five(n-m) - check_five(m),check_two(n) - check_two(n-m) - check_two(m))
 print(answer)
