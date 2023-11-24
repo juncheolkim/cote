@@ -29,7 +29,7 @@ for _ in range(int(input())):
             print(answer[e-1])
         else: print(-1)'''
 
-def 더하기(숫자1:int, 숫자2:int) -> int:
+'''def 더하기(숫자1:int, 숫자2:int) -> int:
     return 숫자1 + 숫자2
 def 빼기(숫자1:int, 숫자2:int) -> int:
     return 숫자1 - 숫자2
@@ -49,3 +49,8 @@ def 곱셈과팔진수(숫자1:int, 숫자2:int) -> str:
     return oct(숫자1*숫자2)
 def 곱셈과십육진수(숫자1:int, 숫자2:int) -> str:
     return hex(숫자1*숫자2)
+'''
+
+nums = [1, 2, 3, 4, 5]
+dict_comprehension = { i for i in nums   if i != 1}
+print(dict_comprehension)
