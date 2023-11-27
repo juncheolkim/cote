@@ -1,4 +1,27 @@
-import sys
+import heapq
+posX = [1, 0, -1, 0]
+posY = [0, 1, 0, -1]
+M, N = map(int, input().split())
+graph = []
+for _ in range(M):
+    graph.append([int(i) for i in input().split()])
+dp = [[0 for _ in range(N)] for _ in range(M)]
+dp[0][0] = 1
+heap = []
+heapq.heappush(heap, (-graph[0][0],0,0))
+while heap:
+    value,y,x = heapq.heappop(heap)
+    for i in range(4):
+        tmpY = y + posY[i]
+        tmpX = x + posX[i]
+        if M > tmpY >= 0 and N > tmpX >= 0 and graph[y][x] > graph[tmpY][tmpX]:
+            if dp[tmpY][tmpX] == 0:
+                heapq.heappush(heap,(-graph[tmpY][tmpX],tmpY,tmpX))
+            dp[tmpY][tmpX] += dp[y][x]
+            
+print(dp[-1][-1])
+
+'''import sys
 input = sys.stdin.readline
 
 def dfs(y,x):
@@ -28,4 +51,4 @@ dp = [[-1 for _ in range(N)] for _ in range(M)]
 dp[-1][-1] = 1
 answer = 0
 
-print(dfs(0,0))
+print(dfs(0,0))'''
