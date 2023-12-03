@@ -50,7 +50,9 @@ def 곱셈과팔진수(숫자1:int, 숫자2:int) -> str:
 def 곱셈과십육진수(숫자1:int, 숫자2:int) -> str:
     return hex(숫자1*숫자2)
 '''
-
+'''
 nums = [1, 2, 3, 4, 5]
 dict_comprehension = { i for i in nums   if i != 1}
 print(dict_comprehension)
+'''
+print(set("asasas"))
