@@ -10,6 +10,7 @@ dp[0][0] = 1
 heap = []
 heapq.heappush(heap, (-graph[0][0],0,0))
 while heap:
+    print(dp)
     value,y,x = heapq.heappop(heap)
     for i in range(4):
         tmpY = y + posY[i]

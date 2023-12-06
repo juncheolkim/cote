@@ -53,7 +53,5 @@ def 곱셈과십육진수(숫자1:int, 숫자2:int) -> str:
 '''
 nums = [1, 2, 3, 4, 5]
 dict_comprehension = { i for i in nums   if i != 1}
-print(dict_comprehension)'''
-
-'''print({'key':['basd'/'asd']})'''
-
+print(dict_comprehension)
+'''

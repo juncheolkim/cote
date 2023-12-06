@@ -9,9 +9,6 @@ def dfs(y,x):
             dp[y][x] += dfs(ny,nx)
     return dp[y][x]
 
-
-
-
 N = int(input())
 dp = [[-1 for _ in range(N)]for _ in range(N)]
 graph = []
